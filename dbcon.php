@@ -2,7 +2,7 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "Army Service";
+$dbname = "MilitaryService";
 $port = 3306;
 
 // Create connection
