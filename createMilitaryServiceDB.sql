@@ -1,7 +1,23 @@
 drop database if exists militaryservice;
 create database militaryservice;
 use militaryservice;
-create table Soldier (
+create table Army (
+    id int auto_increment,
+    firstname varchar(30),
+    surname varchar(30),
+    age varchar(2),
+    rank varchar(30),
+    primary key(id)
+);
+create table Navy (
+    id int auto_increment,
+    firstname varchar(30),
+    surname varchar(30),
+    age varchar(2),
+    rank varchar(30),
+    primary key(id)
+);
+create table Airforce (
     id int auto_increment,
     firstname varchar(30),
     surname varchar(30),
