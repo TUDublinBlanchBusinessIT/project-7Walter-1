@@ -5,6 +5,8 @@ $sn = $_POST['sname'];
 $age = $_POST['age'];
 $rk = $_POST['rking'];
 
+//avoid word "rank"
+
 include("dbcon.php");
 
 $sql = "Insert into army(firstname,surname,age,ranking)
