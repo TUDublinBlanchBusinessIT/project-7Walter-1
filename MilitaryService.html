@@ -5,18 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Military Service</title>
 </head>
-
-
 <body>
     <H2 align="center">Military Service</H2>
     <form action="ProcessSoldierForm.php" method="post"> 
         Firstname: <input type="text" name="fname"><br>
         Surname: <input type="text" name="sname"><br>
-        Age: <input type="text" name="age"><br>
-        Ranking: <input type="text" name="rking"><br>
+        Ranking:<select name="rking" id="Ranking">
+            <option value="Recruit">Recruit</option>
+            <option value="Sergeant">Sergeant</option>
+            <option value="Lieutenant">Lieutenant</option>
+            <option value="Colonel">Colonel</option>
+            <option value="General">General</option>
+            </select>
+            <br>
+        Age:<input type="range" min="18" max="42" value="30" class="slider" id="AgeRange" name="age">
+        <p>Value: <span id="AgeSlider"></span></p>
+      <script>
+      var slider = document.getElementById("AgeRange");
+      var output = document.getElementById("AgeSlider");
+      output.innerHTML = slider.value;
+      //displays slider value
 
+      slider.oninput = function() {
+        output.innerHTML = this.value;
+      }
+      //updates the value when the slider is dragged
+      </script>
         <input type="submit"><br>
-
 
     </form>
 </body>

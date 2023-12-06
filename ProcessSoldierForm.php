@@ -5,7 +5,7 @@ $sn = $_POST['sname'];
 $age = $_POST['age'];
 $rk = $_POST['rking'];
 
-//avoid word "rank"
+//avoid word "rank" conflict with SQL commands
 
 include("dbcon.php");
 
