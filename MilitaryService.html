@@ -10,7 +10,8 @@
     <form action="ProcessSoldierForm.php" method="post"> 
         Firstname: <input type="text" name="fname"><br>
         Surname: <input type="text" name="sname"><br>
-        Ranking:<select name="rking" id="Ranking">
+        Gender: <input type="text" name="gder"><br> 
+        Ranking: <select name="rking" id="Ranking">
             <option value="Recruit">Recruit</option>
             <option value="Sergeant">Sergeant</option>
             <option value="Lieutenant">Lieutenant</option>
@@ -18,11 +19,15 @@
             <option value="General">General</option>
             </select>
             <br>
-        Age:<input type="range" min="18" max="42" value="30" class="slider" id="AgeRange" name="age">
-        <p>Value: <span id="AgeSlider"></span></p>
+        <!--dropdown list for ranking-->
+        
+        Years in Service:<input type="range" min="1" max="42" value="21" class="slider" id="YearsInService" name="yis">
+        <p>Value: <span id="YISslider"></span></p>
+        <!--Slider for Years in Service-->
+
       <script>
-      var slider = document.getElementById("AgeRange");
-      var output = document.getElementById("AgeSlider");
+      var slider = document.getElementById("YearsInService");
+      var output = document.getElementById("YISslider");
       output.innerHTML = slider.value;
       //displays slider value
 

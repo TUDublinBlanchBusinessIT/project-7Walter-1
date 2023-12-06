@@ -2,15 +2,16 @@
 
 $fn = $_POST['fname'];
 $sn = $_POST['sname'];
-$age = $_POST['age'];
+$yis = $_POST['yis'];
 $rk = $_POST['rking'];
+$gr = $_POST['gder'];
 
 //avoid word "rank" conflict with SQL commands
 
 include("dbcon.php");
 
-$sql = "Insert into army(firstname,surname,age,ranking)
-values ('$fn','$sn','$age','$rk')";
+$sql = "Insert into army(firstname,surname,yearsinservice,ranking,gender)
+values ('$fn','$sn','$yis','$rk','$gr')";
 
 mysqli_query($conn,$sql);
 mysqli_close($conn);
