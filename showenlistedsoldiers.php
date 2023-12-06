@@ -8,9 +8,10 @@ echo "<TABLE border='1'>";
 while($row = mysqli_fetch_assoc($result)) {
     $fn = $row['firstname'];
     $sn = $row['surname'];
-    $age = $row['age'];
+    $yis = $row['yis'];
     $rk = $row['ranking'];
-    echo "<TR><TD>$fn</TD><TD>$sn</TD><TD>$age</TD><TD>$rk</TD></TR>";
+    $gr = $row['gder'];
+    echo "<TR><TD>$fn</TD><TD>$sn</TD><TD>$yis</TD><TD>$rk</TD><TD>$gr</TD></TR>";
 }
 echo "</TABLE>";
 

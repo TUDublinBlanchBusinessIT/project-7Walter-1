@@ -1,5 +1,7 @@
 <?php
 
+session_start();
+
 $fn = $_POST['fname'];
 $sn = $_POST['sname'];
 $yis = $_POST['yis'];
