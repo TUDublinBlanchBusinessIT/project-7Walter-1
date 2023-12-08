@@ -17,10 +17,14 @@ while($row = $result->fetch_assoc())
 }
 if ($dBpwd==$pwd)
 {
-    echo "password correct";
+        //if password is correct, user will be brought to the next page
+        session_start();
+        $_Session['userName'] = $usr;
+        header("Location: MilitaryService.html");
 }
 else
 {
-    echo "password is incorrect";
+        //if password is incorrect, user will be brought back to sign in again
+        header("Location: LoginTryAgain.html");
 }
 ?>
