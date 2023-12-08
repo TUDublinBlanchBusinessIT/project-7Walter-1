@@ -8,5 +8,6 @@ create table Army (
     yearsinservice decimal(2),
     ranking varchar(30),
     gender varchar(30),
+    discharged date,
     primary key(id)
 );
