@@ -9,17 +9,17 @@
     <H2 align="center">Military Service</H2>
     <p>Login Succesful</p>
     <form action="ProcessSoldierForm.php" method="post"> 
-        Firstname: <input type="text" name="fname">
+        Firstname: <input type="text" name="firstname">
         <br>
-        Surname: <input type="text" name="sname">
+        Surname: <input type="text" name="surname">
         <br>
-        Gender: <select name="gder">
+        Gender: <select name="gender">
           <option value="Male">Male</option>
           <option value="Female">Female</option>
           </select>
           <br> 
           <!--dropdown list for gender-->
-        Ranking: <select name="rking">
+        Ranking: <select name="ranking">
             <option value="Recruit">Recruit</option>
             <option value="Sergeant">Sergeant</option>
             <option value="Lieutenant">Lieutenant</option>
@@ -28,10 +28,10 @@
             </select>
             <br>
         <!--dropdown list for ranking-->
-        Date Discharged: <input type="date" name="discharged">
+        Date Discharged: <input type="date" name="datedischarged">
         <br>
         <!--Date input box for discharge-->
-        Years in Service:<input type="range" min="1" max="42" value="21" class="slider" id="YearsInService" name="yis">
+        Years in Service:<input type="range" min="1" max="42" value="21" class="slider" id="YearsInService" name="yearsinservice">
         <p>Value: <span id="YISslider"></span></p>
         </br>
         <!--Slider for Years in Service-->

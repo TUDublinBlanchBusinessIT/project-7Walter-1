@@ -11,7 +11,9 @@ while($row = mysqli_fetch_assoc($result)) {
     $yis = $row['yearsinservice'];
     $rk = $row['ranking'];
     $gr = $row['gender'];
-    echo "<TR><TD>$fn</TD><TD>$sn</TD><TD>$yis</TD><TD>$rk</TD><TD>$gr</TD></TR>";
+    $dd = $row['discharged'];
+
+    echo "<TR><TD>$fn</TD><TD>$sn</TD><TD>$yis</TD><TD>$rk</TD><TD>$gr</TD><TD>$dd</TD</TR>";
 }
 echo "</TABLE>";
 
