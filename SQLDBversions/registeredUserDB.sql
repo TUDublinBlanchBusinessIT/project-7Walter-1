@@ -1,5 +1,3 @@
-DROP DATABASE if EXISTS militaryservice;
-CREATE DATABASE militaryservice;
 USE militaryservice;
 drop table if exists registeredUser;
 create table registeredUser(
