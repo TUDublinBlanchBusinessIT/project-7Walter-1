@@ -22,11 +22,22 @@ create table army (
     primary key(id)
 );
 
+USE militaryservice;
+drop table if exists registeredUser;
+create table registeredUser(
+    regUserID int auto_increment,
+    userName varchar(30),
+    pwd varchar(30),
+    primary key(regUserID)
+);
+
+INSERT INTO registeredUser(userName, pwd) values('Walter', 'semperFidelis');
+
 INSERT INTO officer(firstname,surname) values ("Dwight", "Eisenhower");
 INSERT INTO officer(firstname,surname) values ("Micheal", "Collins");
-INSERT INTO army(firstname,surname,yearsinservice,ranking,gender,discharged,officerid) values ('Joe','Smith','1','Male','Recruit','2012-03-01',1)
-INSERT INTO army(firstname,surname,yearsinservice,ranking,gender,discharged,officerid) values ('James','Smith','4','Male','Sergeant','2019-05-11',1)
-INSERT INTO army(firstname,surname,yearsinservice,ranking,gender,discharged,officerid) values ('Jack','Hanley','8','Male','Lieutenant','2017-08-01',1)
-INSERT INTO army(firstname,surname,yearsinservice,ranking,gender,discharged,officerid) values ('Amy','Schumacher','9','Female','Lieutenant','2015-10-10',2)
-INSERT INTO army(firstname,surname,yearsinservice,ranking,gender,discharged,officerid) values ('Arnold','Kent','2','Male','Recruit','2012-03-09',2)
+INSERT INTO army(firstname,surname,yearsinservice,ranking,gender,discharged,officerid) values ('Joe','Smith','1','Male','Recruit','2012-03-01',1);
+INSERT INTO army(firstname,surname,yearsinservice,ranking,gender,discharged,officerid) values ('James','Smith','4','Male','Sergeant','2019-05-11',1);
+INSERT INTO army(firstname,surname,yearsinservice,ranking,gender,discharged,officerid) values ('Jack','Hanley','8','Male','Lieutenant','2017-08-01',1);
+INSERT INTO army(firstname,surname,yearsinservice,ranking,gender,discharged,officerid) values ('Amy','Schumacher','9','Female','Lieutenant','2015-10-10',2);
+INSERT INTO army(firstname,surname,yearsinservice,ranking,gender,discharged,officerid) values ('Arnold','Kent','2','Male','Recruit','2012-03-09',2);
 INSERT INTO army(firstname,surname,yearsinservice,ranking,gender,discharged,officerid) values ('Steve','Flanagan','2','Male','Recruit','2016-01-11',2)
