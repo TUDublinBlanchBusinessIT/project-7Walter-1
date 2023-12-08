@@ -8,7 +8,7 @@ $yis = $_POST['yis'];
 $rk = $_POST['rking'];
 $gr = $_POST['gder'];
 
-//avoid word "rank" conflict with SQL commands
+//avoid word "rank" conflict with preset SQL commands
 
 include("dbcon.php");
 
@@ -18,5 +18,5 @@ values ('$fn','$sn','$yis','$rk','$gr')";
 mysqli_query($conn,$sql);
 mysqli_close($conn);
 
-echo "Soldier Enlisted";
+echo "Soldier Registered";
 ?>
